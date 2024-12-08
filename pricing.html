@@ -14,7 +14,7 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo">
-                    <img src="images/logo.jpg" alt="logo" width="200" height="50" >
+                    <img src="images/logo.jpg" alt="logo" width="200" height="50">
                 </a>
 
                 <ul class="nav_list">
@@ -25,7 +25,7 @@
                         <a href="features.html" class="nav_list-link">Photography</a>
                     </li>
                     <li class="nav_list-item">
-                        <a href="pricing.html" class="nav_list-link">Projects</a>
+                        <a href="projects.html" class="nav_list-link">Projects</a>
                     </li>
                 </ul>
 
@@ -47,232 +47,36 @@
 
     <!-- MAIN -->
     <main>
-        <!-- PRICING HERO -->
-        <section class="pricing">
+        <!-- PROJECTS HERO -->
+        <section class="projects">
             <div class="container-lg">
-                <div class="row">
-                    <div class="section_text section_text_black">
-                        <div class="section_text-box">
-                            <h2 class="heading white">Pricing</h2>
-                            <p class="opaque-grey">Create a your stories, Photosnap is a platform for photographers and
-                                visual storytellers. It’s the simple way to create and share your photos.</p>
-                        </div>
-                    </div>
-                    <div class="section_image section-pricing-img"></div>
+                <div class="section_text section_text_black">
+                    <h2 class="heading">Projects</h2>
+                    <p>Here are some of the exciting projects I worked on during my college years, ranging from academic assignments to research initiatives.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- PRICING TABS -->
-        <section class="pricing-tabs">
-            <div class="container">
-                <div class="toggle-container">
-                    <span>Monthly</span>
-                    <span>
-                        <input type="checkbox" name="toggle" id="toggle" unchecked>
-                        <label for="toggle">
-                            <div class="ball"></div>
-                        </label>
-                    </span>
-                    <span>Yearly</span>
-                </div>
-                <div class="price-grid">
-                    <div class="price-box">
-                        <h4>Basic</h4>
-                        <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
-                        <h2 class="heading">
-                            <span class="monthly">&dollar;19.00</span>
-                            <span class="yearly">&dollar;190.00</span>
-                        </h2>
-                        <p>
-                            <span class="monthly">per month</span>
-                            <span class="yearly">per year</span>
-                        </p>
-                        <button class="btn btn-black">Pick Plan</button>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="images/project1.jpg" alt="Project 1" class="project-image">
+                        <h3>Airfoil Flow Analysis</h3>
+                        <p>Conducted flow feature extraction using PCA and SVD on unstructured grid data. Compared predictions with ground truth for aerodynamic insights.</p>
+                        <a href="project1-details.html" class="btn btn-black">Read More</a>
                     </div>
-                    <div class="price-box pro">
-                        <h4>Pro</h4>
-                        <p>More advanced features available. Recommended for photography veterans and professionals.
-                        </p>
-                        <h2 class="heading">
-                            <span class="monthly">&dollar;39.00</span>
-                            <span class="yearly">&dollar;390.00</span>
-                        </h2>
-                        <p>
-                            <span class="monthly">per month</span>
-                            <span class="yearly">per year</span>
-                        </p>
-                        <button class="btn btn-black">Pick Plan</button>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="images/project2.jpg" alt="Project 2" class="project-image">
+                        <h3>Electric-Powered UAV Design</h3>
+                        <p>Estimated battery weight for a UAV carrying a 50 kg payload using L/D ratios and mission profiles to optimize surveillance operations.</p>
+                        <a href="project2-details.html" class="btn btn-black">Read More</a>
                     </div>
-                    <div class="price-box">
-                        <h4>Business</h4>
-                        <p>Additional features available such as more detailed metrics. Recommended for business
-                            owners.
-                        </p>
-                        <h2 class="heading">
-                            <span class="monthly">&dollar;99.00</span>
-                            <span class="yearly">&dollar;990.00</span>
-                        </h2>
-                        <p>
-                            <span class="monthly">per month</span>
-                            <span class="yearly">per year</span>
-                        </p>
-                        <button class="btn btn-black">Pick Plan</button>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="images/project3.jpg" alt="Project 3" class="project-image">
+                        <h3>PINN Analysis on Oscillating Airfoil</h3>
+                        <p>Performed analysis of a 0010 airfoil subjected to sinusoidal gust boundary conditions, incorporating overlapping meshes.</p>
+                        <a href="project3-details.html" class="btn btn-black">Read More</a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- COMPARE SECTION -->
-        <section class="compare">
-            <div class="container-small">
-                <h2 class="heading">Compare</h2>
-                <div class="table">
-                    <div class="table_head table_row">
-                        <div class="col-1"><span>The Features</span></div>
-                        <div class="col-2">
-                            <span>Basic</span>
-                            <span>Pro</span>
-                            <span>Business</span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Unlimited Story Posting</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Unlimited Photo Upload</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Embedding Custom Content</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Customize Metadata</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Advanced Metrics</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Photo Downloads</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Search Engine Indexing</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                    <div class="table_body table_row">
-                        <div class="col-1"><span>Custom Analytics</span></div>
-                        <div class="col-2">
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Basic</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Pro</span>
-                            </span>
-                            <span class="mobile-flex-column">
-                                <span class="plan-name">Business</span>
-                                <img src="images/check.svg" alt="check">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- BETA SECTION -->
-        <section class="beta">
-            <div class="container">
-                <div class="row space-between">
-                    <h2 class="heading white">We're in beta.<br>
-                        Get your invite today!</h2>
-                    <a href="index.html" class="invite-link invite-link-white">Get an invite</a>
+                    <!-- Add more projects as needed -->
                 </div>
             </div>
         </section>
@@ -288,19 +92,19 @@
                     </a>
                     <ul class="social">
                         <li>
-                            <a class="facebook" href="index.html"></a>
+                            <a class="facebook" href="#"></a>
                         </li>
                         <li>
-                            <a class="youtube" href="index.html"></a>
+                            <a class="youtube" href="#"></a>
                         </li>
                         <li>
-                            <a class="twitter" href="index.html"></a>
+                            <a class="twitter" href="#"></a>
                         </li>
                         <li>
-                            <a class="pinterest" href="index.html"></a>
+                            <a class="pinterest" href="#"></a>
                         </li>
                         <li>
-                            <a class="instagram" href="index.html"></a>
+                            <a class="instagram" href="#"></a>
                         </li>
                     </ul>
                 </div>
@@ -316,7 +120,7 @@
                             <a class="footer_menu-link" href="features.html">Photography</a>
                         </li>
                         <li class="footer_menu-item">
-                            <a class="footer_menu-link" href="pricing.html">Projects</a>
+                            <a class="footer_menu-link" href="projects.html">Projects</a>
                         </li>
                     </ul>
                 </div>
