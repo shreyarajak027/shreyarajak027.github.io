@@ -1172,6 +1172,10 @@ button {
     background-image: url("../../images/moon-of-appalacia-mobile.jpg");
     height: 320px;
   }
+   .hero1 {
+    background-image: url("../../images/home23.png");
+    height: 320px;
+  }
   .hero .container {
     display: none;
   }
