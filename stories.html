@@ -51,6 +51,7 @@
 
         .blog-content {
             flex: 2;
+            position: relative;
         }
 
         .blog-content h3 {
@@ -61,6 +62,14 @@
         .blog-content p {
             color: #555;
             margin: 0.5rem 0;
+            max-height: 3.6rem; /* Truncate after 2 lines */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: max-height 0.3s ease;
+        }
+
+        .blog-content p.expanded {
+            max-height: none; /* Expand to show full text */
         }
 
         .blog-content a {
@@ -72,6 +81,7 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
             transition: background 0.3s ease;
+            cursor: pointer;
         }
 
         .blog-content a:hover {
@@ -81,7 +91,6 @@
 </head>
 
 <body>
-    <!-- HEADER -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -98,38 +107,28 @@
     </header>
 
     <main>
-        <!-- BLOG SECTION -->
         <section class="blog-section">
             <div class="blog-container">
                 <div class="blog">
                     <img src="images/blog1.jpg" alt="Blog 1" class="blog-image">
                     <div class="blog-content">
                         <h3>Discover Hidden Tales</h3>
-                        <p>Explore untold stories that captivate and inspire. These tales will transport you to another world.</p>
-                        <a href="blog1.html">Read More</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. Integer malesuada nunc vel risus...</p>
+                        <a onclick="toggleText(this)">Read More</a>
                     </div>
                 </div>
                 <div class="blog">
                     <img src="images/blog2.jpg" alt="Blog 2" class="blog-image">
                     <div class="blog-content">
                         <h3>Photography Highlights</h3>
-                        <p>Dive into the art of photography with stunning visuals and behind-the-scenes insights.</p>
-                        <a href="blog2.html">View Gallery</a>
-                    </div>
-                </div>
-                <div class="blog">
-                    <img src="images/blog3.jpg" alt="Blog 3" class="blog-image">
-                    <div class="blog-content">
-                        <h3>Innovative Projects</h3>
-                        <p>Get inspired by cutting-edge projects that push the boundaries of creativity and innovation.</p>
-                        <a href="blog3.html">Explore Projects</a>
+                        <p>Explore the stunning beauty of nature captured through the lens. This collection features breathtaking landscapes and remarkable close-up shots...</p>
+                        <a onclick="toggleText(this)">Read More</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-row">
@@ -141,6 +140,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleText(link) {
+            const paragraph = link.previousElementSibling;
+            paragraph.classList.toggle("expanded");
+
+            if (paragraph.classList.contains("expanded")) {
+                link.textContent = "Read Less";
+            } else {
+                link.textContent = "Read More";
+            }
+        }
+    </script>
 </body>
 
 </html>
